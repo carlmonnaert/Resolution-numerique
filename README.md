@@ -1,10 +1,8 @@
 # Résolution numérique de l'équation de la chaleur en 1D, 2D, 3D et lecteur de données
 ## Mise en contexte et présentation de l'approche :
-<iframe src="https://raw.githubusercontent.com/carlmonnaert/Resolution-numerique/main/pr%C3%A9sentation.pdf"
-        width="100%" height="600px"></iframe>
+[Voir la présentation (PDF)](https://raw.githubusercontent.com/carlmonnaert/Resolution-numerique/main/pr%C3%A9sentation.pdf)
 
-## Objectifs de l'étude
-<img src="https://github.com/carlmonnaert/Resolution-numerique/blob/main/MCOT.pdf" alt="alt text" width="100%" height="whatever">
+[Voir les objectifs (PDF)](https://github.com/carlmonnaert/Resolution-numerique/blob/main/MCOT.pdf)
 
 
 <img src="https://github.com/carlmonnaert/Resolution-numerique/blob/main/combo_blocs.png" alt="alt text" width="100%" height="whatever">
