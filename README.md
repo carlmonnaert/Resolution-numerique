@@ -1,31 +1,32 @@
-# Résolution numérique de l'équation de la chaleur en 1D, 2D, 3D et lecteur de données
-## Mise en contexte et présentation de l'approche :
-[Voir la présentation (PDF)](https://raw.githubusercontent.com/carlmonnaert/Resolution-numerique/main/pr%C3%A9sentation.pdf)
+# Numerical solution of the heat equation in 1D, 2D, 3D and data reader
+## Context and presentation of the approach:
 
-[Voir les objectifs (PDF)](https://github.com/carlmonnaert/Resolution-numerique/blob/main/MCOT.pdf)
+You will find here the [presentation (PDF)](https://raw.githubusercontent.com/carlmonnaert/Resolution-numerique/main/pr%C3%A9sentation.pdf) in french.
+
+The list of objectives of this study and references to other studies can be found [here (PDF)](https://github.com/carlmonnaert/Resolution-numerique/blob/main/MCOT.pdf)
 
 
 <img src="https://github.com/carlmonnaert/Resolution-numerique/blob/main/combo_blocs.png" alt="alt text" width="100%" height="whatever">
  
-## Résolution dans des cas simples:
+## Solution in simple cases:
 
-Le fichier `Résolution1D.py` affiche la résolution de l'équation de la chaleur en 1D en temps réel pour une barre de conductivité thermique modifiable en début de code.
-Cette barre est soumise à une température imposée à l'extrémité droite (temp_sol) et un flux conducto-convectif à gauche
+The file `Résolution1D.py` displays the solution to the 1D heat equation in real time for a bar with thermal conductivity that can be modified at the beginning of the code.
+This bar is subjected to a temperature imposed at the right end (temp_sol) and a conductive-convective flow on the left
 
-Le fichier `Résolution2D.py` affiche la résolution de l'équation de la chaleur en 2D en temps réel pour un plan de conductivité thermique modifiable en début de code.
-Ce plan est souis à une température imposée sur le tour (temp_sol)
+The file `Résolution2D.py` displays the solution to the 2D heat equation in real time for a plane with thermal conductivity that can be modified at the beginning of the code.
+This plane is subjected to a temperature imposed on the top (temp_sol).
 
-Le fichier `Résolution3Djoli.py` affiche une résolution en 3D avec les mêmes conditions aux limites que pour la résolution en 2D
+The file `Résolution3Djoli.py` displays a 3D solution with the same boundary conditions as for the 2D solution.
 
 
-## Résolution dans des cas particuliers:
+## Resolution in special cases:
 
-Les fichiers suivant résolvent l'équation de la chaleur pour un bassin de piscine soumis à une conducto-convection à sa surface, aucun flux thermique sur les côtés du bassin et une grille d'échangeur de géométrie personalisable sur le fond du bassin et éventuellement les côtés.
+The following files solve the heat equation for a swimming pool subjected to conductive convection at its surface, with no heat flow on the sides of the pool and a customisable heat exchanger grid on the bottom of the pool and possibly on the sides.
 
-Les fichiers `Résolution3Drp.py` et `Résolution3Dopti.py` permettent la résolution de l'équation de la chaleur pour un bassin de piscine de dimensions olympiques et peut être adapté à tout autre système régi par la conduction thermique.
+The files `Résolution3Drp.py` and `Résolution3Dopti.py` enable the heat equation to be solved for an Olympic-sized swimming pool and can be adapted to any other system governed by thermal conduction.
 
-Il est nécessaire de créer un dossier du même nom que la variable extension, dossier dans lequel seront enregistrées des données par les exécutions de `Résolution3Drp.py` et `Résolution3Dopti.py`, auxquelles on pourra accéder par le lecteur `reader_all.py` dans lequel on entrera l'extension (nom du dossier) à visualiser.
+It is necessary to create a folder with the same name as the extension variable, in which data will be saved by the execution of `Résolution3Drp.py` and `Résolution3Dopti.py`. This data can be accessed by the `reader_all.py` reader, in which the extension (folder name) to be viewed is entered.
 
-L'exécution de Résolution3Drp étant très longue (environ 5 heures pour les fichiers joints), on présente dans les dossiers joints les résultats pour différentes géométries de l'échangeur eau chauffée/eau du bassin.
+As the execution of Resolution3Drp takes a long time (approximately 5 hours for the attached files), the attached folders contain the results for different geometries of the heated water/pool water exchanger.
 
-Ces données peuvent être visionnées par l'exécution de `reader_all.py`
+This data can be viewed by executing `reader_all.py`.
